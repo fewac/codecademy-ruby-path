@@ -88,6 +88,12 @@ In most classes the <=> method is defined in such a way that a <=> b equals -1 i
 This is why reversing the order of arguments in a block will reverse the sort order. It will sort descending, 
 larger items before smaller ones.
 
+Here are some links you can vist to read more about this:
+
+* http://www.codecademy.com/forum_questions/5233861a548c351b3f00186c
+* http://www.codecademy.com/forum_questions/5233df7ef10c604eac00292c
+* http://www.codecademy.com/forum_questions/51460322cedb4b1444006c54#response-51461350bde24d1bb00070b4
+* http://ideone.com/aNXWjT
 =end
 
 
