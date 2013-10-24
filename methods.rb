@@ -9,3 +9,16 @@ def by_three?(number)
     return false
   end
 end
+
+#  REMEMBERING HOW TO DEFINE A METHOD
+
+=begin
+  INSTRUCTIONS
+  Create a method, welcome, that puts "Welcome to Ruby!" After defining your method, call it.
+=end
+
+def welcome()
+  puts "Welcome to Ruby"
+end
+
+welcome()
