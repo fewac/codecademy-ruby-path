@@ -53,3 +53,45 @@ the length of the shorter one) – otherwise it’s alphabetical:
 
 "ab" is larger because "b" is greater than "a".
 =end
+
+
+
+#################################################################################################################
+
+
+
+
+=begin
+OK, now, lets see how to sort some items in ascending or descending order.
+Firstly, lets see ascending order:
+=end
+#We have the variable "books" with some items
+books = ["Charlie and the Chocolate Factory", "War and Peace", "Utopia", "A Brief History of Time", "A Wrinkle in Time"]
+
+#Now, in order to order "books" in ascending order we have the next code:
+
+books.sort! {|firstBook, secondBook| firstBook <=> secondBook}
+
+#Ok, maybe you are thinking: "Why we have to use the placeholders if we can use only 'books.sort!' 
+#because would make the same thing", OK, you are right, but in this case we are going to do it in this way
+#only that you can see how "descending" way works. By the way!, lets see the descending method:
+
+books.sort! {|firstBook, secondBook| secondBook <=> firstBook}
+
+=begin
+The most probably you are asking yourself how the previous code works, OK, if this is your case let's 
+see an explanation that maybe can help you:
+
+If you do not provide "sort" with a block at all, it assumes "{|a,b| a<=>b}" by default and sorts "smaller" items before 
+"larger" items (that is, ascending).
+In most classes the <=> method is defined in such a way that a <=> b equals -1 if and only if b <=> a equals 1.
+This is why reversing the order of arguments in a block will reverse the sort order. It will sort descending, 
+larger items before smaller ones.
+
+=end
+
+
+
+
+
+
