@@ -10,6 +10,11 @@ def by_three?(number)
   end
 end
 
+
+
+
+
+
 #  REMEMBERING HOW TO DEFINE A METHOD
 
 =begin
@@ -22,3 +27,11 @@ def welcome()
 end
 
 welcome()
+
+# Now, add an argument and replace your "puts" with "return"
+
+def welcome(name)
+  puts "Welcom to ruby #{name}"
+end
+
+welcome("Mr Rubytar")
