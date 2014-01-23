@@ -8,7 +8,7 @@ We can create hashes several ways, but two of the most popular are hash literal 
 =end
 
 # Another example could be:
-=begin
+
 data = {"First name" => "Isao", "Last name" => "Nakamura", "Age" => "60"}
 
 # We can also iterate over hashes using the .each, for example (using "data" hash)
@@ -27,7 +27,7 @@ data.each { |key, value|
 # Nil is a ruby's way to say "nothing at all". It's important to realize that "false" and "nil"
 # are not the same thing: "false" means "Not true" while "nil" is nothing at all"".
 # For example: if we have the next hash
-=end
+
 creatures = {
   "Weasels" => 0,
   "platypuses" => 3, 
@@ -41,3 +41,19 @@ creatures = {
 puts "the value is: #{creatures["leopards"]}"
 
 
+
+=begin
+  As you have seen, when you ask for key that the Hash does not has you are
+  going to get a "Nil" value by default. However, you can set your own default
+  value only using the "Hash.new" syntax. Lets see an example next:
+=end
+
+my_Hash = Hash.new("This is the default value. The key does not exist.")#Here we create the Hash with a diferent Nil value
+
+#Next we put some keys and values into the Hash:
+my_Hash["dolphin"] = 100
+my_Hash["dog"] = 5
+my_Hash["cat"] = 4
+
+#...and finally we request for a key value that does not exists in order to get the non Nil value by default.
+my_Hash["leopard"]
