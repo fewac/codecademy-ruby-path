@@ -57,3 +57,20 @@ my_Hash["cat"] = 4
 
 #...and finally we request for a key value that does not exists in order to get the non Nil value by default.
 my_Hash["leopard"]
+
+
+=begin
+  So far, we've seen strings as a keys in the Hashes, however we can use symbols instead strings.
+  Lets see an example
+=end
+
+people = {
+  :john => 1,
+  :mary => 3,
+  :david => 5,
+  :margareth => 2
+}
+
+people[:john] #we will get the value "1"
+
+
